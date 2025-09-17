@@ -1,0 +1,244 @@
+/* General Body & Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- RULE FOR CONSISTENT WIDTH --- */
+.hero-section > .container,
+.analysis-section > .container,
+.features-section > .container,
+.waitlist-section > .container,
+.faq-section > .container {
+    max-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; 
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header */
+.navbar {
+    padding: 1.5rem 0;
+}
+
+.navbar-nav .nav-link {
+    color: #6c757d; 
+    margin: 0 1rem;
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #000; 
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #f0f0f0;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 6rem 0;
+}
+
+.hero-section .logo-icon-hero {
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 { 
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    color: #000000; 
+    margin-bottom: 1rem; 
+}
+
+.hero-section h2.display-6 {
+    font-size: 2.25rem; 
+    font-weight: 500; 
+    color: #6c757d; 
+    margin-bottom: 3rem !important; 
+}
+
+/* Analysis Section */
+.analysis-section {
+    padding: 4rem 0 6rem;
+    padding-top: 8rem; 
+}
+
+.analysis-section h3 {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #000000; 
+    margin-bottom: 1rem; 
+}
+
+.analysis-section .lead {
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    color: #6c757d; 
+}
+
+
+.features-section h4 {
+    font-size: 1.75rem;
+}
+
+/* Waitlist Section */
+.waitlist-section {
+    padding: 4rem 0;
+}
+
+.waitlist-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.waitlist-section .form-control {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    text-align: center;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 6rem 0;
+}
+
+.accordion {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-button {
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    position: relative;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-button::before {
+    content: '+';
+    position: absolute;
+    left: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::before {
+    content: '−'; 
+    transform: rotate(180deg);
+}
+
+.accordion-button::after {
+    display: none; 
+}
+
+.accordion-body {
+    padding: 0 1.5rem 1.5rem 2.5rem;
+    color: #6c757d;
+}
+
+/* Footer */
+.footer-section {
+    padding: 4rem 0;
+}
+
+.footer-section h6 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.footer-section a:hover {
+    color: #000;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+}
+
+.modal-body {
+    padding: 2.5rem;
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal .form-control {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+}
+
+.site-logo {
+    height: 48px;
+    width: auto;
+    display: block;
+  }
+
+.logo-icon-hero {
+    display: inline-block;
+  }

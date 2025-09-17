@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxch - Agentic AI for Stocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="static/logo_D.svg" alt="Daxch Logo", class="site-logo">
+            </a>
+            <div class="d-none d-lg-flex ms-auto me-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section text-center">
+            <div class="container">
+                <div class="logo-icon-hero mb-4">
+                    <img src="static/logo_D.svg" alt="Daxch Icon" class="site-logo">
+                </div>
+                <h1 class="display-4 fw-bold">Daxch: Agentic AI for stocks.</h1>
+                <h2 class="display-6 fw-bolder text-secondary">Your multi-agent copilot for actionable stock analysis.</h2>
+                <div>
+                    <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#notifyModal">Notify me</button>
+                    <button class="btn btn-secondary btn-lg">Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-section text-center">
+            <div class="container">
+                <h3 class="fw-bold">Analyze stocks through agent-powered lenses built for every trading style.</h3>
+                <p class="display-6 fw-bolder text-secondary">Multi-agent AI delivers insights for swing, scalp, momentum, and fundamentals.</p>
+                <div class="mt-5">
+                    <img src="static/hero_image.png" class="img-fluid rounded-3" alt="Stock analysis graphic">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold fs-2">Agents orchestrate results.</h4>
+                        <p class="text-secondary fs-5">Our agentic system brings together specialized AI agents, each with a unique analysis lens—swing trading, scalp opportunities, momentum detection, or stock fundamentals. These coordinated agents elevate your understanding and highlight what matters in real time.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/feature_image_compass.png" class="img-fluid rounded-3" alt="Feature illustration 1">
+                    </div>
+                </div>
+                <div class="row g-5 align-items-center mb-5 flex-row-reverse">
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold fs-2">Insight, not advice.</h4>
+                        <p class="text-secondary fs-5">Daxch gives you the actionable information you need to decide—but the final buy or sell call is always yours. We empower you to act, never telling you what to do.</p>
+                    </div>
+                     <div class="col-lg-6">
+                        <img src="static/feature_image_lighthouse.png" class="img-fluid rounded-3" alt="Feature illustration 2">
+                    </div>
+                </div>
+                 <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold fs-2">Multi-lens expertise.</h4>
+                        <p class="text-secondary fs-5">See stocks from every angle. Our multi-agent system analyzes trends, momentum, fundamentals, and trading signals for a holistic view—no single perspective missed.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/feature_image_prism.png" class="img-fluid rounded-3" alt="Feature illustration 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="waitlist-section text-center">
+            <div class="container">
+                <div class="waitlist-box">
+                    <h3 class="fw-bold">Stay updated.</h3>
+                    <p class="text-secondary">Join the Daxch waitlist.</p>
+        
+                    <form id="waitlist-form" action="https://formspree.io/f/mblavqzq" method="POST" class="d-flex flex-column flex-sm-row justify-content-center mt-4">
+                        <input type="email" name="email" class="form-control mb-2 mb-sm-0 me-sm-2" placeholder="name@fromer.com" required>
+                        <button type="submit" class="btn btn-dark">Enter your email</button>
+                    </form>
+                    <div id="waitlist-success-message" class="form-success mt-3" style="display:none;">
+                        Thank you for joining the waitlist, we'll be in touch!
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                What is Daxch's agentic AI system?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our agentic system brings together specialized AI agents, each with a unique analysis lens—swing trading, scalp opportunities, momentum detection, or stock fundamentals. These coordinated agents elevate your understanding and highlight what matters in real time.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can Daxch help improve my stock decisions?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Daxch provides multi-lens expertise by analyzing trends, momentum, fundamentals, and trading signals for a holistic view, ensuring no single perspective is missed. This gives you comprehensive insights to make more informed decisions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Is Daxch financial advice or a trading recommendation?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                No. Daxch provides insight, not advice. We give you actionable information you need to decide, but the final buy or sell call is always yours. We empower you to act, never telling you what to do.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="static/logo_D.svg" alt="Daxch Logo" class="site-logo">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold">Get in touch</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:hello@daxch.com">hello@daxch.com</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="fw-bold">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li>Copyright © 2025 Daxch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="notifyModal" tabindex="-1" aria-labelledby="notifyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="fw-bold">Stay updated.</h4>
+                    <p class="text-secondary">Join the Daxch waitlist.</p>
+    
+                    <form id="modal-form" action="https://formspree.io/f/mblavqzq" method="POST" class="d-flex flex-column flex-sm-row justify-content-center mt-4">
+                         <input type="email" name="email" class="form-control mb-2 mb-sm-0 me-sm-2" placeholder="name@fromer.com" required>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                    <div id="modal-success-message" class="form-success mt-3" style="display:none;">
+                        Thank you for joining! We'll be in touch.
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
