@@ -1,6 +1,10 @@
 /* General Body & Typography */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: #ffffff;
     color: #000000;
 }
@@ -84,7 +88,7 @@ p {
 
 .hero-section h2.display-6 {
     font-size: 2.25rem; 
-    font-weight: 500; 
+    font-weight: 400; 
     color: #6c757d; 
     margin-bottom: 3rem !important; 
 }
