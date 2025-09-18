@@ -9,6 +9,7 @@ body {
 .hero-section > .container,
 .analysis-section > .container,
 .features-section > .container,
+.how-it-works-section > .container,
 .waitlist-section > .container,
 .faq-section > .container {
     max-width: 960px;
@@ -139,6 +140,47 @@ p {
     font-size: 1.75rem;
 }
 
+/* How It Works Section */
+.how-it-works-section {
+    padding: 6rem 0;
+}
+
+.how-it-works-section h3 {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #000000; 
+    margin-bottom: 1rem;
+}
+
+.how-it-works-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.how-it-works-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 82, 204, 0.1);
+}
+
+.how-it-works-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #e3f2fd; /* A very light blue */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-it-works-icon svg {
+    color: #0d47a1; /* Dark blue accent color */
+}
+
 /* Waitlist Section */
 .waitlist-section {
     padding: 10rem 0;
@@ -194,6 +236,7 @@ p {
     background-color: #fff;
     padding: 1.5rem 1.5rem 1.5rem 2.5rem;
     position: relative;
+    font-size: 1.1rem; /* Increased font size */
 }
 
 .accordion-button:not(.collapsed) {
@@ -228,6 +271,7 @@ p {
 .accordion-body {
     padding: 0 1.5rem 1.5rem 2.5rem;
     color: #6c757d;
+    font-size: 1.05rem; /* Increased font size */
 }
 
 /* Footer */
@@ -308,4 +352,3 @@ p {
         text-align: justify;
     }
 }
-/* END: NEW Rules */
