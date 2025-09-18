@@ -15,44 +15,48 @@
     <header class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="static/logo_D.svg" alt="Daxch Logo", class="site-logo">
+                <img src="static/logo_full_cropped.svg" alt="Daxch Logo", class="site-logo">
             </a>
             <div class="d-none d-lg-flex ms-auto me-auto">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Instagram</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/daxch.ai/" target="_blank">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:hello.daxch@gmail.com" target="_blank">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero-section text-center">
+        <section class="hero-section">
             <div class="container">
-                <div class="logo-icon-hero mb-4">
-                    <img src="static/logo_D.svg" alt="Daxch Icon" class="site-logo">
-                </div>
-                <h1 class="display-4 fw-bolder">Daxch: Agentic AI for stocks.</h1>
-                <h2 class="display-6 text-secondary">Your multi-agent copilot for actionable stock analysis.</h2>
-                <div>
-                    <a href="#waitlist" class="btn btn-dark btn-lg rounded-pill">Notify me</a>
-                    <button class="btn btn-secondary btn-lg rounded-pill">Learn more</button>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-4 fw-bolder">Daxch: Agentic AI for stocks.</h1>
+                        <h2 class="display-6 text-secondary">Your multi-agent copilot for actionable stock analysis.</h2>
+                        <div class="mt-4">
+                            <a href="#waitlist" class="btn btn-dark btn-lg rounded-pill">Notify me</a>
+                            <button class="btn btn-secondary btn-lg rounded-pill">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <div id="lottie-animation"></div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="analysis-section text-center">
+        <section class="analysis-section text-center content-section-with-lines">
             <div class="container">
-                <h3 class="fw-bolder">Analyze stocks through agent-powered lenses built for every trading style.</h3>
-                <p class="display-6 text-secondary">Multi-agent AI delivers insights for swing, scalp, momentum, and fundamentals.</p>
+                <h3 class="fw-bolder">Analyze stocks through agents with different personas, each offering a unique perspective.</h3>
+                <br>
+                <p class="display-6 text-secondary">From bullish optimism to bearish caution, get the full spectrum of analysis on any stock.</p>
                 <div class="mt-5">
                     <img src="static/hero_image.png" class="img-fluid rounded-3" alt="Stock analysis graphic">
                 </div>
             </div>
         </section>
 
-        <section class="features-section">
+        <section class="features-section content-section-with-lines">
             <div class="container">
                 <div class="row g-5 align-items-center mb-5">
                     <div class="col-lg-6">
@@ -69,7 +73,7 @@
                         <p class="text-secondary fs-5">Daxch gives you the actionable information you need to decide—but the final buy or sell call is always yours. We empower you to act, never telling you what to do.</p>
                     </div>
                      <div class="col-lg-6">
-                        <img src="static/feature_image_lighthouse.png" class="img-fluid rounded-3" alt="Feature illustration 2">
+                        <img src="static/feature_image_lighthouse_2.png" class="img-fluid rounded-3" alt="Feature illustration 2">
                     </div>
                 </div>
                  <div class="row g-5 align-items-center">
@@ -78,13 +82,13 @@
                         <p class="text-secondary fs-5">See stocks from every angle. Our multi-agent system analyzes trends, momentum, fundamentals, and trading signals for a holistic view—no single perspective missed.</p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="static/feature_image_prism.png" class="img-fluid rounded-3" alt="Feature illustration 3">
+                        <img src="static/feature_image_prism_2.png" class="img-fluid rounded-3" alt="Feature illustration 3">
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="waitlist-section text-center" id="waitlist">
+        <section class="waitlist-section text-center content-section-with-lines" id="waitlist">
             <div class="container">
                 <div class="waitlist-box">
                     <h1 class="display-4 fw-bolder">Stay updated.</h1>
@@ -104,9 +108,14 @@
                 </div>
             </div>
         </section>
-
-        <section class="faq-section">
+        <section class="faq-section text-center content-section-with-lines">
             <div class="container">
+                
+                <div class="faq-header mb-5">
+                    <h3 class="fw-bolder">Frequently Asked Questions</h3>
+                    <p class="lead text-secondary">Answers to common questions about Daxch.</p>
+                </div>
+        
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -154,14 +163,14 @@
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <a class="navbar-brand" href="#">
-                        <img src="static/logo_D.svg" alt="Daxch Logo" class="site-logo">
+                        <img src="static/logo_full_cropped.svg" alt="Daxch Logo" class="site-logo">
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <h6 class="fw-bold">Get in touch</h6>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:hello@daxch.com">hello@daxch.com</a></li>
-                        <li><a href="#">Instagram</a></li>
+                        <li><a href="mailto:hello.daxch@gmail.com">hello@daxch.com</a></li>
+                        <li><a href="https://www.instagram.com/daxch.ai/">Instagram</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -177,10 +186,8 @@
         </div>
     </footer>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

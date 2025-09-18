@@ -1,8 +1,4 @@
 /* General Body & Typography */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #ffffff;
@@ -37,7 +33,7 @@ p {
     font-weight: 500;
 }
 .navbar-nav .nav-link:hover {
-    color: #000; 
+    color: #0052cc;
 }
 
 /* Buttons */
@@ -49,14 +45,17 @@ p {
 }
 
 .btn-dark {
-    background-color: #000;
-    color: #fff;
-    border-color: #000;
+    background: linear-gradient(145deg, #0d47a1, #1565c0);
+    color: #ffffff;
+    border: 1px solid #0d47a1;
+    transition: all 0.3s ease;
 }
 
 .btn-dark:hover {
-    background-color: #333;
-    border-color: #333;
+    background: linear-gradient(145deg, #1565c0, #0d47a1);
+    border-color: #0c3d91;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .btn-secondary {
@@ -72,11 +71,29 @@ p {
 
 /* Hero Section */
 .hero-section {
+    position: relative;
     padding: 6rem 0;
+    overflow: hidden;
 }
 
-.hero-section .logo-icon-hero {
-    margin-bottom: 2rem;
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: 
+        linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-section h1 { 
@@ -88,15 +105,21 @@ p {
 
 .hero-section h2.display-6 {
     font-size: 2.25rem; 
-    font-weight: 400; 
+    font-weight: 400;
     color: #6c757d; 
     margin-bottom: 3rem !important; 
+}
+
+/* Lottie Animation Styling */
+#lottie-animation {
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 /* Analysis Section */
 .analysis-section {
     padding: 4rem 0 6rem;
-    padding-top: 8rem; 
+    padding-top: 8rem;
 }
 
 .analysis-section h3 {
@@ -112,22 +135,28 @@ p {
     color: #6c757d; 
 }
 
-
 .features-section h4 {
     font-size: 1.75rem;
 }
 
 /* Waitlist Section */
 .waitlist-section {
-    padding: 4rem 0;
+    padding: 10rem 0;
 }
 
 .waitlist-box {
+    background-color: #ffffff;
     border: 1px solid #e0e0e0;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 4rem 2rem;
     max-width: 800px;
     margin: 0 auto;
+    box-shadow: 0 15px 40px rgba(0, 82, 204, 0.1);
+}
+
+.waitlist-box h1 {
+    color: #000000;
+    margin-bottom: 0.5rem;
 }
 
 .waitlist-section .form-control {
@@ -140,6 +169,13 @@ p {
 /* FAQ Section */
 .faq-section {
     padding: 6rem 0;
+}
+
+.faq-section h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
 }
 
 .accordion {
@@ -177,6 +213,7 @@ p {
     font-size: 1.5rem;
     font-weight: 400;
     transition: transform 0.2s ease-in-out;
+    color: #0052cc;
 }
 
 .accordion-button:not(.collapsed)::before {
@@ -196,6 +233,7 @@ p {
 /* Footer */
 .footer-section {
     padding: 4rem 0;
+    position: relative;
 }
 
 .footer-section h6 {
@@ -212,37 +250,62 @@ p {
 }
 
 .footer-section a:hover {
-    color: #000;
+    color: #0052cc;
 }
 
-/* Modal */
-.modal-content {
-    border-radius: 16px;
-    border: none;
+/* Modal and others */
+.modal-content { border-radius: 16px; border: none; }
+.modal-body { padding: 2.5rem; }
+.modal .btn-close { position: absolute; top: 1rem; right: 1rem; }
+.modal .form-control { border-radius: 8px; padding: 0.75rem 1rem; border: 1px solid #ced4da; }
+.site-logo { height: 48px; width: auto; display: block; }
+.logo-icon-hero { display: inline-block; }
+
+/* Vertical Content Lines */
+.content-section-with-lines {
+    position: relative;
 }
 
-.modal-body {
-    padding: 2.5rem;
+@media (min-width: 1200px) {
+    .content-section-with-lines::before,
+    .content-section-with-lines::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #e9e7e7;
+    }
+
+    .content-section-with-lines::before {
+        left: calc(50% - 520px - 40px); 
+    }
+
+    .content-section-with-lines::after {
+        right: calc(50% - 520px - 40px);
+    }
+    
+    .footer-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 1px;
+        background-color: #e0e0e0;
+        left: 0;
+        right: 0;
+    }
 }
 
-.modal .btn-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+/* START: NEW Mobile Text Justification Rules */
+@media (max-width: 991.98px) {
+    /* Justify paragraph text in the features section on mobile */
+    .features-section p.text-secondary {
+        text-align: justify;
+    }
+
+    /* Justify paragraph text in the FAQ answers on mobile */
+    .accordion-body {
+        text-align: justify;
+    }
 }
-
-.modal .form-control {
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    border: 1px solid #ced4da;
-}
-
-.site-logo {
-    height: 48px;
-    width: auto;
-    display: block;
-  }
-
-.logo-icon-hero {
-    display: inline-block;
-  }
+/* END: NEW Rules */
